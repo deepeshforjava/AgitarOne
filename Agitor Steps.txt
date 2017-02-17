@@ -1,0 +1,18 @@
+Steps to Generate the Test Cases with Agitor
+
+1. Register on Agitor website with official id for 30 days trial period.
+2. Download the Agitor with the provided id and password in the email.
+3. Unzip the downloaded software in C:\ or any directory.
+4. Open command prompt and Go to C:\agitorOne\bin and then startup.cmd
+5. This will open a new console for server running which should not be closed.
+6. Verify the server with http://localhost:8080/agitar-server/ in browser. 
+7. From this console url, you can see the Dashboard, running Jobs, reports etc.
+8. Agitor uses MockingBird framework to mock the objects.
+
+
+Items That Are Never Mocked
+AgitarOne never mocks the following in your code:
+n impossible conditions (for example: a == 3 && a == 5)
+n native methods
+n reflection
+n static final constants (unless they use a method call or are set in a static initializer)
